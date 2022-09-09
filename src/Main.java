@@ -55,17 +55,22 @@ public class Main {
         //System.out.println(Arrays.toString(backingArray) + " and size is: " + size + " and dimension is " + backingArray.length);
 */
 
-        SinglyLinkedList<Integer> test2 = new SinglyLinkedList<>();
+/*        SinglyLinkedList<Integer> test2 = new SinglyLinkedList<>();
 
+        test2.print();
         test2.addToFront(23);
+        test2.print();
         test2.addToFront(24);
+        test2.print();
         test2.addToFront(25);
+        test2.print();
         test2.addToBack(12);
-        System.out.println(test2.getHead().getData());
-        System.out.println(test2.getHead().getNext().getData());
-        System.out.println(test2.getTail().getData());
+        test2.print();
         test2.removeFromFront();
+        test2.print();
         test2.removeFromBack();
+        test2.print();
+ */
 
     }
 }

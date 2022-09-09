@@ -1,3 +1,5 @@
+import java.util.NoSuchElementException;
+
 /**
  * Your implementation of a Singly-Linked List.
  */
@@ -24,9 +26,19 @@ public class SinglyLinkedList<T> {
      */
     public void addToFront(T data) {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
-        SinglyLinkedListNode<T> next = new SinglyLinkedListNode<>(data);
-        next.setNext(head);
-        head = next;
+        if (data == null) {
+            throw new IllegalArgumentException("Invalid argument. Error when adding to Linked List.");
+        }
+
+        if (size == 0) {
+            SinglyLinkedListNode<T> current = new SinglyLinkedListNode<>(data);
+            head = current;
+            tail = current;
+        }
+        else {
+            SinglyLinkedListNode<T> current = new SinglyLinkedListNode<>(data,head);
+            head = current;
+        }
         size++;
     }
 
@@ -40,6 +52,21 @@ public class SinglyLinkedList<T> {
      */
     public void addToBack(T data) {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
+        if (data == null) {
+            throw new IllegalArgumentException("Invalid argument. Error when adding to Linked List.");
+        }
+
+        SinglyLinkedListNode<T> current = new SinglyLinkedListNode<>(data);
+
+        if (size == 0) {
+            head = current;
+            tail = current;
+        }
+        else {
+            tail.setNext(current);
+            tail = current;
+        }
+        size++;
     }
 
     /**
@@ -52,7 +79,21 @@ public class SinglyLinkedList<T> {
      */
     public T removeFromFront() {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
-        return head.getData();
+        if (size == 0) {
+            throw new NoSuchElementException("Error removing from Linked List: List is empty.");
+        }
+
+        SinglyLinkedListNode<T> removed = head;
+
+        if (size == 1) {
+            head = null;
+            tail = null;
+        }
+        else {
+            head = removed.getNext();
+        }
+        size--;
+        return removed.getData();
     }
 
     /**
@@ -65,7 +106,29 @@ public class SinglyLinkedList<T> {
      */
     public T removeFromBack() {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
-        return tail.getData();
+        if (size == 0) {
+            throw new NoSuchElementException("Error removing from Linked List: List is empty.");
+        }
+
+        SinglyLinkedListNode<T> removed = tail;
+        SinglyLinkedListNode<T> current = head;
+        SinglyLinkedListNode<T> temp = current;
+
+        if (size == 1) {
+            head = null;
+            tail = null;
+        }
+        else {
+                while (current.getNext() != null) {
+                    temp = current;
+                    current = current.getNext();
+                }
+            tail = temp;
+            tail.setNext(null);
+        }
+
+        size--;
+        return removed.getData();
     }
 
     /**
@@ -105,5 +168,23 @@ public class SinglyLinkedList<T> {
     public int size() {
         // DO NOT MODIFY THIS METHOD!
         return size;
+    }
+
+    /* End of EDX submission */
+
+    public void print() {
+        System.out.print("[");
+        SinglyLinkedListNode<T> current = head;
+        while (current != null) {
+            System.out.print(" " + current.getData());
+            current = current.getNext();
+        }
+        if (head != null || tail != null) {
+            System.out.println(" " + "] and size is " + size + ". Head is " + head.getData() + " and Tail is " + tail.getData());
+        }
+        else {
+            System.out.println(" " + "] and size is " + size);
+        }
+
     }
 }
