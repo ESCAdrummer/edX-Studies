@@ -47,15 +47,18 @@ public class Main {
         ArrayList<Integer> test = new ArrayList<>();
 
         test.addToFront(3);
+        test.print();
         test.addToBack(1250);
+        test.print();
 
         test.removeFromBack();
+        test.print();
         test.removeFromFront();
-        //if needed to test: import java.util.Arrays;
-        //System.out.println(Arrays.toString(backingArray) + " and size is: " + size + " and dimension is " + backingArray.length);
+        test.print();
 */
 
-/*        SinglyLinkedList<Integer> test2 = new SinglyLinkedList<>();
+/*
+        SinglyLinkedList<Integer> test2 = new SinglyLinkedList<>();
 
         test2.print();
         test2.addToFront(23);
@@ -71,6 +74,25 @@ public class Main {
         test2.removeFromBack();
         test2.print();
  */
+ /*
+        ArrayQueue<Integer> test3 = new ArrayQueue<>();
+        test3.print();
+        test3.enqueue(1);
+        test3.print();
+        test3.enqueue(2);
+        test3.print();
+        test3.enqueue(3);
+        test3.print();
+        test3.dequeue();
+        test3.print();
+        test3.dequeue();
+        test3.print();
+        test3.dequeue();
+        test3.print();
+        test3.enqueue(1);
+        test3.print();
+*/
+
 
     }
 }

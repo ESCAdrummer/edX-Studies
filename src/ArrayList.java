@@ -158,4 +158,14 @@ public class ArrayList<T> {
         // DO NOT MODIFY THIS METHOD!
         return size;
     }
+
+    // END OF EDX Submission *******
+
+    public void print() {
+        System.out.print("[");
+        for (int i = 0; i< backingArray.length;i++) {
+            System.out.print(" " + backingArray[i]);
+        }
+        System.out.println(" ]");
+    }
 }

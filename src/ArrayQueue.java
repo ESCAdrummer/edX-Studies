@@ -45,6 +45,35 @@ public class ArrayQueue<T> {
     public void enqueue(T data) {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
 
+        //check exception data is null
+        if (data == null) {
+            throw new IllegalArgumentException("Error enqueuing. Argument invalid.");
+        }
+
+
+        //resize + moving queue to index 0
+        if (size >= backingArray.length) {
+            T[] tempArray = (T[]) new Object[backingArray.length * 2];
+            int current;
+            for (int i = 0 ; i < backingArray.length ; i++) {
+                current = front + i; //using double pointers
+                if (current > backingArray.length - 1) {
+                    current = front + i - backingArray.length;
+                }
+                tempArray[i] = backingArray [current];
+            }
+            backingArray = tempArray;
+            front = 0;
+        }
+
+        //setting back of array
+        int back = front + size;
+        if (back > backingArray.length - 1) {
+            back = back - backingArray.length; //back when it is before the front
+        }
+
+        backingArray[back] = data;
+        size++;
     }
 
     /**
@@ -64,7 +93,18 @@ public class ArrayQueue<T> {
      */
     public T dequeue() {
         // WRITE YOUR CODE HERE (DO NOT MODIFY METHOD HEADER)!
-        return backingArray[0];
+        if (size == 0) {
+            throw new NoSuchElementException("Error removing from queue: queue is empty.");
+        }
+
+        T removed = backingArray[front];
+        backingArray[front] = null;
+        front++;
+        if (front >= backingArray.length-1) {
+            front = 0;
+        }
+        size--;
+        return removed;
     }
 
     /**
@@ -91,5 +131,15 @@ public class ArrayQueue<T> {
     public int size() {
         // DO NOT MODIFY THIS METHOD!
         return size;
+    }
+
+    //******END OF EDX SUBMISSION*******
+
+    public void print() {
+        System.out.print("[");
+            for (int i = 0; i< backingArray.length;i++) {
+                System.out.print(" " + backingArray[i]);
+            }
+        System.out.println(" ]");
     }
 }
