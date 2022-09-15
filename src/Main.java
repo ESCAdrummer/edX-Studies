@@ -92,7 +92,20 @@ public class Main {
         test3.enqueue(1);
         test3.print();
 */
+/*
+        SinglyLinkedList<String> exam = new SinglyLinkedList<>();
 
+        exam.addToBack("Mary");
+        exam.addToBack("Andrew");
+        exam.addToBack("Stephanie");
+        exam.addToBack("Ivan");
+        exam.addToBack("Miguel");
+        exam.addToBack("Adrianna");
+
+        exam.print();
+
+        exam.mystery(exam.getHead());
+*/
 
     }
 }

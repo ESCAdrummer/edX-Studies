@@ -187,4 +187,19 @@ public class SinglyLinkedList<T> {
         }
 
     }
+
+    public void mystery (SinglyLinkedListNode cur) {
+       //recursion craziness in the exam.
+        if (cur == null) {
+            System.out.println("CS 1332 is cool!");
+            return;
+        }
+        if (cur.getNext() != null && cur.getData().toString().length() >5) {
+            mystery(cur.getNext().getNext());
+            System.out.println(cur.getData().toString().length());
+        } else if (cur.getData().toString().length() % 2 ==0) {
+            System.out.println(cur.getData());
+            mystery(cur.getNext());
+        }
+    }
 }
