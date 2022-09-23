@@ -36,7 +36,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        //EDX Studies on Data Structures and Algorithms.
+        //Implementations of these Data Structures.
+
 /*
+        //Part I Java basics in recursion.
         Main test = new Main();
         System.out.println(test.gcd(60,24));
         System.out.println(test.factorial(10));
@@ -44,6 +48,7 @@ public class Main {
 */
 
 /*
+        //Part I ArrayList
         ArrayList<Integer> test = new ArrayList<>();
 
         test.addToFront(3);
@@ -58,6 +63,7 @@ public class Main {
 */
 
 /*
+        //Part I LinkedList
         SinglyLinkedList<Integer> test2 = new SinglyLinkedList<>();
 
         test2.print();
@@ -75,6 +81,7 @@ public class Main {
         test2.print();
  */
  /*
+        //Part I Queue
         ArrayQueue<Integer> test3 = new ArrayQueue<>();
         test3.print();
         test3.enqueue(1);
@@ -93,6 +100,7 @@ public class Main {
         test3.print();
 */
 /*
+        //Part I Final Exam
         SinglyLinkedList<String> exam = new SinglyLinkedList<>();
 
         exam.addToBack("Mary");
@@ -107,5 +115,31 @@ public class Main {
         exam.mystery(exam.getHead());
 */
 
+        //Part II Binary Trees Traversals
+
+/*
+        TreeNode<Integer> addition1 = new TreeNode<>(50);
+        TreeNode<Integer> addition2 = new TreeNode<>(25);
+        TreeNode<Integer> addition3 = new TreeNode<>(10);
+        TreeNode<Integer> addition4 = new TreeNode<>(100);
+        TreeNode<Integer> addition5 = new TreeNode<>(75);
+        TreeNode<Integer> addition6 = new TreeNode<>(125);
+        TreeNode<Integer> addition7 = new TreeNode<>(110);
+
+        addition1.setLeft(addition2);
+        addition2.setLeft(addition3);
+        addition1.setRight(addition4);
+        addition4.setLeft(addition5);
+        addition4.setRight(addition6);
+        addition6.setLeft(addition7);
+
+        Traversals<Integer> test4 = new Traversals<>();
+
+        System.out.println(test4.preorder(addition1));
+        System.out.println(test4.inorder(addition1));
+        System.out.println(test4.postorder(addition1));
+*/
+
+        //Part II BST Operations
     }
 }
