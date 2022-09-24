@@ -140,6 +140,71 @@ public class Main {
         System.out.println(test4.postorder(addition1));
 */
 
+
+
+//int x =~ 0x7ffffff | 0x2;
+//System.out.println(Integer.toHexString(x));
+
+//String a = "test";
+//a.concat("B");
+
+//System.out.println(a.concat("B"));
+
+//
+/*
+int a=0, b=0;
+while (a<3)
+{
+    switch (a+b) {
+        case 0: a++;
+        case 1:
+        case 2: b++; break;
+        case 3: a++; break;
+        default: b=0; break;
+    }
+    System.out.println(b);
+}
+*/
+/*
+        stringShifter test = new stringShifter();
+
+        String s = "Stringshift test";
+        s = test.shiftLeft(s);
+        System.out.println(s);
+        s = test.shiftLeft(s);
+        System.out.println(s);
+        s = test.shiftLeft(s);
+        System.out.println(s);
+        s = test.shiftLeft(s);
+        System.out.println(s);
+        s = test.shiftLeft(s);
+        System.out.println(s);
+        s = test.shiftLeft(s);
+        System.out.println(s);
+        s = test.shiftLeft(s);
+        System.out.println(s);
+        s = test.shiftLeft(s);
+        System.out.println(s);
+        s = test.shiftRight(s);
+        System.out.println(s);
+        s = test.shiftRight(s);
+        System.out.println(s);
+        s = test.shiftRight(s);
+        System.out.println(s);
+        s = test.shiftRight(s);
+        System.out.println(s);
+        s = test.shiftRight(s);
+        System.out.println(s);
+        s = test.shiftRight(s);
+        System.out.println(s);
+        s = test.shiftRight(s);
+        System.out.println(s);
+        s = test.shiftRight(s);
+        System.out.println(s);
+*/
+
+
         //Part II BST Operations
+
     }
 }
