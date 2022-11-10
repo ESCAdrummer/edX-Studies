@@ -206,5 +206,19 @@ while (a<3)
 
         //Part II BST Operations
 
+        BST<Integer> testBST = new BST<>();
+        testBST.add(50);
+        testBST.add(25);
+        testBST.add(10);
+        testBST.add(100);
+        testBST.add(75);
+        testBST.add(125);
+        testBST.add(110);
+
+        testBST.remove(100);
+
+        testBST.remove(109);
+
+
     }
 }
