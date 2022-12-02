@@ -36,8 +36,16 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        //EDX Studies on Data Structures and Algorithms.
-        //Implementations of these Data Structures.
+        /**
+         * EDX Studies on Data Structures and Algorithms.
+         * Implementations of these Data Structures.
+         * Everything in this main method is commented as it is only to test the implementations in the other classes.
+         * No external library is called and everything is done with generics.
+         * It should be virtually identical to the original :) (Yeah!).
+         */
+
+        //
+        //
 
 /*
         //Part I Java basics in recursion.
@@ -205,7 +213,7 @@ while (a<3)
 
 
         //Part II BST Operations
-
+/*
         BST<Integer> testBST = new BST<>();
         testBST.add(50);
         testBST.add(25);
@@ -218,7 +226,52 @@ while (a<3)
         testBST.remove(100);
 
         testBST.remove(109);
+*/
+/*
+        MinHeap<Integer> testHeap = new MinHeap<>();
 
+        testHeap.add(0);
+        testHeap.printHeap();
+        testHeap.remove();
+        testHeap.printHeap();
+        testHeap.add(0);
+        testHeap.add(1);
+        testHeap.add(2);
+        testHeap.add(4);
+        testHeap.add(3);
+        testHeap.add(5);
+        testHeap.add(7);
+        testHeap.add(6);
+        testHeap.add(8);
+        testHeap.add(9);
+        testHeap.add(10);
+        testHeap.printHeap();
+
+        testHeap.remove();
+        testHeap.printHeap();
+        testHeap.remove();
+        testHeap.printHeap();
+        testHeap.remove();
+        testHeap.printHeap();
+        testHeap.remove();
+        testHeap.printHeap();
+        testHeap.remove();
+        testHeap.printHeap();
+        testHeap.remove();
+        testHeap.printHeap();
+        testHeap.remove();
+        testHeap.printHeap();
+        testHeap.remove();
+        testHeap.printHeap();
+        testHeap.remove();
+        testHeap.printHeap();
+        testHeap.remove();
+        testHeap.printHeap();
+        testHeap.remove();
+        testHeap.printHeap();
+        testHeap.remove();
+        testHeap.printHeap();
+*/
 
     }
 }

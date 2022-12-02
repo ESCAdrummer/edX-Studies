@@ -11,3 +11,4 @@ Topics covered so far are:
 - Queue (enqueue, dequeue).
 - Binary Trees Traversals (preorder, inorder, postorder)
 - Binary Search Trees (add, remove)
+- Binary Heaps (add, remove)
