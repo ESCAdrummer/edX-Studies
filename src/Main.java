@@ -1,5 +1,8 @@
+import java.util.Arrays;
+
 public class Main {
 
+    //Recursion Practices
     public int gcd(int x, int y) {
 
         if (y == 0) {return x;}
@@ -60,12 +63,8 @@ public class Main {
         ArrayList<Integer> test = new ArrayList<>();
 
         test.addToFront(3);
-        test.print();
         test.addToBack(1250);
-        test.print();
-
         test.removeFromBack();
-        test.print();
         test.removeFromFront();
         test.print();
 */
@@ -76,35 +75,14 @@ public class Main {
 
         test2.print();
         test2.addToFront(23);
-        test2.print();
-        test2.addToFront(24);
-        test2.print();
-        test2.addToFront(25);
-        test2.print();
-        test2.addToBack(12);
-        test2.print();
         test2.removeFromFront();
-        test2.print();
         test2.removeFromBack();
-        test2.print();
  */
  /*
         //Part I Queue
         ArrayQueue<Integer> test3 = new ArrayQueue<>();
-        test3.print();
         test3.enqueue(1);
-        test3.print();
-        test3.enqueue(2);
-        test3.print();
-        test3.enqueue(3);
-        test3.print();
         test3.dequeue();
-        test3.print();
-        test3.dequeue();
-        test3.print();
-        test3.dequeue();
-        test3.print();
-        test3.enqueue(1);
         test3.print();
 */
 /*
@@ -147,66 +125,11 @@ public class Main {
         System.out.println(test4.inorder(addition1));
         System.out.println(test4.postorder(addition1));
 */
-
-
-
-//int x =~ 0x7ffffff | 0x2;
-//System.out.println(Integer.toHexString(x));
-
-//String a = "test";
-//a.concat("B");
-
-//System.out.println(a.concat("B"));
-
-//
-/*
-int a=0, b=0;
-while (a<3)
-{
-    switch (a+b) {
-        case 0: a++;
-        case 1:
-        case 2: b++; break;
-        case 3: a++; break;
-        default: b=0; break;
-    }
-    System.out.println(b);
-}
-*/
 /*
         stringShifter test = new stringShifter();
 
         String s = "Stringshift test";
         s = test.shiftLeft(s);
-        System.out.println(s);
-        s = test.shiftLeft(s);
-        System.out.println(s);
-        s = test.shiftLeft(s);
-        System.out.println(s);
-        s = test.shiftLeft(s);
-        System.out.println(s);
-        s = test.shiftLeft(s);
-        System.out.println(s);
-        s = test.shiftLeft(s);
-        System.out.println(s);
-        s = test.shiftLeft(s);
-        System.out.println(s);
-        s = test.shiftLeft(s);
-        System.out.println(s);
-        s = test.shiftRight(s);
-        System.out.println(s);
-        s = test.shiftRight(s);
-        System.out.println(s);
-        s = test.shiftRight(s);
-        System.out.println(s);
-        s = test.shiftRight(s);
-        System.out.println(s);
-        s = test.shiftRight(s);
-        System.out.println(s);
-        s = test.shiftRight(s);
-        System.out.println(s);
-        s = test.shiftRight(s);
-        System.out.println(s);
         s = test.shiftRight(s);
         System.out.println(s);
 */
@@ -216,62 +139,26 @@ while (a<3)
 /*
         BST<Integer> testBST = new BST<>();
         testBST.add(50);
-        testBST.add(25);
-        testBST.add(10);
-        testBST.add(100);
-        testBST.add(75);
-        testBST.add(125);
-        testBST.add(110);
-
         testBST.remove(100);
-
-        testBST.remove(109);
 */
+        //Part II Heaps
 /*
         MinHeap<Integer> testHeap = new MinHeap<>();
 
         testHeap.add(0);
-        testHeap.printHeap();
-        testHeap.remove();
-        testHeap.printHeap();
-        testHeap.add(0);
-        testHeap.add(1);
-        testHeap.add(2);
-        testHeap.add(4);
-        testHeap.add(3);
-        testHeap.add(5);
-        testHeap.add(7);
-        testHeap.add(6);
-        testHeap.add(8);
-        testHeap.add(9);
-        testHeap.add(10);
-        testHeap.printHeap();
-
-        testHeap.remove();
-        testHeap.printHeap();
-        testHeap.remove();
-        testHeap.printHeap();
-        testHeap.remove();
-        testHeap.printHeap();
-        testHeap.remove();
-        testHeap.printHeap();
-        testHeap.remove();
-        testHeap.printHeap();
-        testHeap.remove();
-        testHeap.printHeap();
-        testHeap.remove();
-        testHeap.printHeap();
-        testHeap.remove();
-        testHeap.printHeap();
-        testHeap.remove();
-        testHeap.printHeap();
-        testHeap.remove();
-        testHeap.printHeap();
-        testHeap.remove();
-        testHeap.printHeap();
         testHeap.remove();
         testHeap.printHeap();
 */
+
+        //Part II HashMaps
+/*
+        ExternalChainingHashMap<Integer, Integer> testMap = new ExternalChainingHashMap<>();
+
+        testMap.put(6,6);
+        testMap.remove(6);
+        testMap.print();
+*/
+
 
     }
 }
