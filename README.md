@@ -12,3 +12,4 @@ Topics covered so far are:
 - Binary Trees Traversals (preorder, inorder, postorder)
 - Binary Search Trees (add, remove)
 - Binary Heaps (add, remove)
+- HashMaps (put, remove)
